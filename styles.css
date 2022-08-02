@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color:hsla(0,100%,50%,1);
+background-image:
+radial-gradient(at 40% 20%, hsla(28,100%,74%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(355,100%,93%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(340,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(22,100%,77%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(242,100%,70%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(343,100%,76%,1) 0px, transparent 50%);
+}
+
+.background{
+    height: 100vh;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+.header p{
+    max-width: 150px;
+    text-align: right;
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 30px;
+    gap: 30px;
+}
+
+
+.content #mysteryNumber{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 50px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    /* padding-top:x; */
+    /* background-color: aquamarine;
+    border: 1px solid black; */
+    padding-bottom: 30px;
+}
+
+.leftPanel{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftPanel .caution{
+    font-size: 10px;
+    width: 100px;
+    text-align: center;
+    line-height: 12px;
+    color: white;
+}
+
+.leftPanel #checkNumber{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 50px;
+}
+
+.rightPanel{
+    padding-top: 30px;
+    margin: auto;
+}
+
+.rightPanel h3{
+    font-size: 20px;
+    /* background-color: antiquewhite; */
+    /* max-width: 600px; */
+}
+
+input[type = "button"]{
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+input[type = "button"]:hover{
+    background-color: rgb(57, 57, 57);
+}
+
+input[type = "text"]{
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}

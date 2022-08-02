@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Guess my number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="header">
+                <input type="button" value="Play Again" id="reset">
+                <p><strong>Guess any number between 1 to 20 </strong></p>
+            </div>
+            <div class="content">
+                <h1>Guess the number</h1>
+                <input type="text" value="?" id="mysteryNumber">
+            </div>
+            <div class="footer">
+                <div class="leftPanel">
+                    <input type="text" id="checkNumber">
+                    <p class="caution">Enter the number above from 1 to 20 and start guessing</p>
+                    <input type="button" value="check" onclick="checkNumberBtn()" id="checkTheNumber">
+                </div>
+                <div class="rightPanel">
+                    <h3 id="status">🎉 Number needed.</h3>
+                    <h3>🏆 Score: <span id="score">20</span></h3>
+                    <h3>🏋️ Highscore: <span id="hScore">20</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
